@@ -1,0 +1,80 @@
+
+Note : This refrence note is written by Kvc ...at 12:02 AM - 3.10.2014 [d.m.y format]
+	 I'm not responsible for the lost you can do your system with this file...as it depends on your
+	 intelligence of using file in Useful way...
+
+	Fn.dll is an amazing (6 Kb in size) file... it can take following parameters ...
+
+1. Sleep [time] :- 
+		you can pause the whole batch file by passing 'sleep' as parameter as defined in syntax !!
+		and time is the amount of time to stop the consol in milliseconds...
+
+		Syntax : fn.dll sleep 1000
+
+		to stop console for 1 second.
+
+2. Kbd :-
+		You can get the ASCII code of any key pressed on the Keyboard..and it returns ASCII code
+		in the variable 'ERRORLEVEL' ...
+
+		syntax : fn.dll kbd 
+
+3. mouse :-
+		You can get the co-ordinates of area where User has clicked with mouse..and it returns co-ordinates
+		and the key_id ...which is pressed...
+
+		syntax : fn.dll mouse
+		output : [e.g.] 12 25 1
+		then line no.=12
+			column = 25
+			and left clicked there...if there is 2 instead of 1,then right clicked there...
+
+4. color :-
+		Instead of changing color of whole cmd window,(like in simple color command)...this
+		will change the color of next text to be added !!
+
+		syntax1 : fn.dll color [colorCodeLikeSimpleColorCommand]
+		syntax2 : fn.dll color
+		output1 : text in color
+		output2 : returns the current color code of cmd console.
+
+5. Locate :-
+		Moves the Cursor to specified location...
+
+		syntax : fn.dll locate [row] [column]
+
+6. sprite :-
+		Moves the cursor to a specified x,y location and prints the specific line at that location in specified color.
+
+		syntax : fn.dll sprite [row] [column] [ColorCode] "text to display"
+
+7. Cursor :-
+		To change the width of the blinking cursor...
+
+		syntax : fn.dll cursor [n]
+		n -> can be from 0 to 100
+
+		0 -> no width cursor (hide cursor)
+		100 -> full width cursor (Unhide cursor)
+
+
+8. Font :-
+		Changes the font-size of characters in cmd...
+
+		syntax : fn.dll font [size]
+		size -> 0 to 9
+
+9. Print :-
+		Same functioning as Echo. command...but the cursor will not goto next line automatically as in echo command...
+		and you can use '\n' for newline like in c...between characters...
+		also ... the specific text can be print in color and after printing the color is again set to previous value...
+
+		syntax : fn.dll print [colorcode] "text to print \n newline"
+10.pLAY :-	Plays a wav file...
+		Syntax: Fn.dll Play "Path to wav file"
+
+keep sharing, keep learning...
+Be happy, spread happiness...
+
+visit 'https://www.thebateam.org' for more...
+#TheBATeam
